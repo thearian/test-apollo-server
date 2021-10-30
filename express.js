@@ -8,9 +8,9 @@ app.get("/", (req, res) => {
 
 app.get("/users", (req, res) => {
     if (!req.query.userId) return res.status(405).send("405")
-    res.send("users" + req.query.userId);
+    res.send("users " + req.query.userId);
 })
 
-app.listen(3030, function () {
+app.listen(8080, function () {
     console.log("runned successfully");
 })

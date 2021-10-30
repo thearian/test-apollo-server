@@ -12,5 +12,7 @@ const post = {
     }
 }
 
+
+
 console.log( post.followers = 1000000 )
 console.log(post);
