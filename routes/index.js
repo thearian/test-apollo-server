@@ -1,10 +1,8 @@
 const router = require("express").Router()
 const controllers = require("../controllers")
 
-router.get("/posts", (req,res) => {
-    res.send(posts)
-})
-
-router.get("/post", controllers.getOnePost)
-
+router.get("/newpost",controllers.addPost)
+router.get("/posts",controllers.getPosts)
+router.get("/post/:id",controllers.getPostById)
+router.get("/postId/",controllers.getPostId)
 module.exports = router
